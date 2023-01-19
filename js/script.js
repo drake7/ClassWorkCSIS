@@ -46,9 +46,10 @@ function DisplayList(items, wrapper, rows_per_page, page) {
     let item = paginatedItems[i];
     let li = document.createElement("li");
     li.className = "contact-item cf";
+    let email = item.name.replace(" ", ".");
 
     li.innerHTML = `<div class="contact-details">
-      <img class="avatar" src="${item.image}"/><h3>"${item.name}"</h3><span class="email">iboya.vat@example.com</span></div>
+      <img class="avatar" src="${item.image}"/><h3>"${item.name}"</h3><span class="email">${email}@example.com</span></div>
       <div class="joined-details">
         <span class="date">Joined ${item.joined}</span>
       </div>`;
