@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>contacts</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="page">
+      <div class="page-header cf">
+        <h2>Contacts</h2>
+        <h3>Total:</h3>
+      </div>
+      <ul class="contact-list" id="contact-list">
+        <li class="contact-item cf">
+          <div class="contact-details">
+            <img
+              class="avatar"
+              src="https://randomuser.me/api/portraits/thumb/women/67.jpg"
+            />
+            <h3>iboya vat</h3>
+            <span class="email">iboya.vat@example.com</span>
+          </div>
+          <div class="joined-details">
+            <span class="date">Joined 07/15/15</span>
+          </div>
+        </li>
+        <li class="contact-item cf">
+          <div class="contact-details">
+            <img
+              class="avatar"
+              src="https://randomuser.me/api/portraits/thumb/men/75.jpg"
+            />
+            <h3>aapo niskanen</h3>
+            <span class="email">aapo.niskanen@example.com</span>
+          </div>
+          <div class="joined-details">
+            <span class="date">Joined 06/15/12</span>
+          </div>
+        </li>
+      </ul>
+      <!-- Add pagination links in this section -->
+      <div class="pagination" id="pagination"></div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
